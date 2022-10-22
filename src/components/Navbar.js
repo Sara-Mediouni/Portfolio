@@ -42,9 +42,9 @@ export default function Navbarcomponent(){
           </Nav>
           <span className="navbar-text">
               <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt=""/></a>
-              <a href="#"><img src={navIcon2} alt=""/></a>
-              <a href="#"><img src={navIcon3} alt=""/></a>
+              <a href="https://www.linkedin.com/in/sara-mediouni-726b87205"><img src={navIcon1} alt=""/></a>
+              <a href="https://www.facebook.com/mediouni.sara"><img src={navIcon2} alt=""/></a>
+           
               </div>
           <button className="vvd" onClick={()=>console.log('connect')}><span>Let's connect</span></button>
           </span>

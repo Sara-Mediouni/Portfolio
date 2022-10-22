@@ -48,7 +48,7 @@ export default function Banner() {
               {`Hi!, i'm Sara `}
               <span className="wrap">{text}</span>
             </h1>
-            <p>about self causing</p>
+            <p>Turning ideas into real life <span id="products">products</span> is my calling.</p>
             <button onClivk={() => console.log("connect")}>
               Let's connect <ArrowRightCircle size={25}/>
             </button>

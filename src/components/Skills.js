@@ -89,7 +89,7 @@ export default function Skills() {
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
                                     
                                 </div>
                             </Carousel>
