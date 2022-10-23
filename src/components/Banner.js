@@ -3,6 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from '../assets/img/61e7040706211fef317619fe_UI_UX Design.svg'
 import { useState,useEffect } from "react";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen'
+
 export default function Banner() {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -45,10 +48,10 @@ export default function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi!, i'm Sara `}
+              {`Hi!, i'm Sara Mediouni `}
               <span className="wrap">{text}</span>
             </h1>
-            <p>Turning ideas into real life <span id="products">products</span> is my calling.</p>
+            <p>Turning ideas into real life <TrackVisibility>{({isVisible})=><div className={isVisible?"products animate__animated animate__flash":"products"}><span >products</span></div>}</TrackVisibility> is my calling.</p>
             <button onClivk={() => console.log("connect")}>
               Let's connect <ArrowRightCircle size={25}/>
             </button>

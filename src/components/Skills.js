@@ -6,6 +6,7 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import TrackVisibility from 'react-on-screen'
 export default function Skills() {
     const responsive = {
         superLargeDesktop: {
@@ -32,9 +33,7 @@ export default function Skills() {
                 <Row>
                     <Col>
                         <div className="skill-bx">
-                            <h2>
-                                <p>Skills</p>
-                            </h2>
+                        <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__bounceIn":""}><h2>Skills</h2></div>}</TrackVisibility> 
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original-wordmark.svg" />

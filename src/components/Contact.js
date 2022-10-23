@@ -2,42 +2,31 @@ import React from 'react'
 import { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import contactImg from '../assets/img/contact-img.svg'
+import TrackVisibility from 'react-on-screen'
 export default function Contact() {
-  const formInitialDetails={
-    firstName:'',
-    lastName:'',
-    email:'',
-    phone:'',
-    message:''
-  }
-  const [formDetails, setFormDetails]=useState(formInitialDetails)
-  const [buttonText, setButtonText]=useState('Send');
-  const [status,setStatus]=useState({});
+
+  
   
   
   return (
-   <section className='contact' id='connect'>
+    <section className="contacts" id="contacts">
     <Container>
-        <Row className='align-items-center'> 
-<Col md={6}>
-    <img src={contactImg} alt="contactus"/>
-</Col>
-<Col md={6}>
-    <h2>Get In Touch</h2>
-    <form>
         <Row>
-            <Col sm={6} className="px-1">
-                <input type="text" value={formDetails.firstName} placeholder="First Name"/>
+            <Col>
+                <div className="contact-bx">
+                <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__bounceIn":""}><h2>Contacts</h2></div>}</TrackVisibility> 
+                <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__flash":""}>     <a href="https://github.com/Sara-Mediouni" ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" /></a></div>}</TrackVisibility>  
+                <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__flash":""}>     <a href="https://github.com/Sara-Mediouni" ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a></div>}</TrackVisibility>  
+                <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__flash":""}>     <a href="https://github.com/Sara-Mediouni" ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /></a></div>}</TrackVisibility>  
+                <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__flash":""}>     <a href="https://github.com/Sara-Mediouni" ><img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" /></a></div>}</TrackVisibility>  
+                <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__flash":""}>     <a href="https://github.com/Sara-Mediouni" ><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" /></a></div>}</TrackVisibility>  
+               
+               
+                </div>
             </Col>
-       
-        </Row>
-    </form>
-</Col>
         </Row>
     </Container>
-    
-    
-    
-    </section>
+
+</section>
   )
 }
