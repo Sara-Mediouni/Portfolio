@@ -48,13 +48,13 @@ export default function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi!, i'm Sara Mediouni `}
+              Hi!, i'm <span class="name"style={{textShadow: "5px 5px #558ABB"}}>Sara </span> Mediouni <br />
               <span className="wrap">{text}</span>
             </h1>
             <p>Turning ideas into real life <TrackVisibility>{({isVisible})=><div className={isVisible?"products animate__animated animate__flash":"products"}><span >products</span></div>}</TrackVisibility> is my calling.</p>
-            <button onClivk={() => console.log("connect")}>
+            <a href="#contacts">
               Let's connect <ArrowRightCircle size={25}/>
-            </button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
