@@ -12,19 +12,19 @@ export default function Projects() {
             title:"Puppify",
             description:"PetStore Swagger.io, ReactJS",
             imgURL:projImg3,
-            liengit:""
+            liengit:"https://github.com/Sara-Mediouni/Puppify"
         },
         {
             title:"Readify",
             description:"Books Store NodeJS, ExpressJS, MongoDB, ReactJS, Google Books API",
             imgURL:projImg2,
-            liengit:""
+            liengit:"https://github.com/Sara-Mediouni/ReadifyFront"
         },
         {
             title:"Sportify",
             description:"Tunisian sports clubs NodeJS, ExpressJS, MongoDB, ReactJS",
             imgURL:projImg1,
-            liengit:""
+            liengit:"https://github.com/Sara-Mediouni/SportifyApplication"
         }
     ]
     const projects2=[
