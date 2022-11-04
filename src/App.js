@@ -1,5 +1,6 @@
 import './App.css';
 import Navbarcomponent from './components/Navbar'
+
 import Banner from './components/Banner'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Skills from './components/Skills';
