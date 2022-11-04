@@ -32,7 +32,7 @@ export default function Projects() {
           title:"Spotify 2.0",
           description:"",
           imgURL:projImg4,
-          liengit:""
+          liengit:"https://github.com/Sara-Mediouni/Spotify2.0/tree/master/Spotify2.0"
       }
   ]
   return (
