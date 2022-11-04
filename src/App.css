@@ -69,6 +69,7 @@ input:focus, textarea:focus, select:focus {
 }
 .App{
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 @media (min-width:1700px) {
 	main .container {
