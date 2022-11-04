@@ -1,11 +1,11 @@
 import './App.css';
-import Navbarcomponent from './components/Navbar'
+import Navbarcomponent from './Components/Navbar'
 
-import Banner from './components/Banner'
+import Banner from './Components/Banner'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
 function App() {
   return (
     <div className="App">
