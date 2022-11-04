@@ -11,24 +11,28 @@ export default function Projects() {
         {
             title:"Puppify",
             description:"PetStore Swagger.io, ReactJS",
-            imgURL:projImg3
+            imgURL:projImg3,
+            liengit:""
         },
         {
             title:"Readify",
             description:"Books Store NodeJS, ExpressJS, MongoDB, ReactJS, Google Books API",
-            imgURL:projImg2
+            imgURL:projImg2,
+            liengit:""
         },
         {
             title:"Sportify",
             description:"Tunisian sports clubs NodeJS, ExpressJS, MongoDB, ReactJS",
-            imgURL:projImg1
+            imgURL:projImg1,
+            liengit:""
         }
     ]
     const projects2=[
       {
           title:"Spotify 2.0",
           description:"",
-          imgURL:projImg4
+          imgURL:projImg4,
+          liengit:""
       }
   ]
   return (

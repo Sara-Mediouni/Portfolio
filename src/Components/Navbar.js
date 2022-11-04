@@ -4,7 +4,6 @@ import '../App.css'
 import {Navbar,Container,Nav} from "react-bootstrap"
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
-import navIcon3 from '../assets/img/nav-icon3.svg'
 import { Eyeglasses } from 'react-bootstrap-icons'
 
 export default function Navbarcomponent(){
@@ -31,7 +30,7 @@ export default function Navbarcomponent(){
           <Navbar.Brand href="#home">
            <Eyeglasses size={80} color="white"/>
           </Navbar.Brand>
-         <Navbar.Toggle aria-contols="basic-navbar-nav">
+         <Navbar.Toggle >
             <span className="navbar-toggler-icon"></span>
          </Navbar.Toggle>
          <Navbar.Collapse>
