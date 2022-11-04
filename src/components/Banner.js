@@ -11,8 +11,8 @@ export default function Banner() {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [index, setIndex] = useState(1);
-    const toRotate = [ "Full Stack Developer", "Mobile Developor" ];
+   
+    const toRotate = [ "Full Stack Developer" ];
     const period = 2000;
 
     useEffect(()=>{
@@ -20,7 +20,7 @@ export default function Banner() {
             tick();
         },delta);
         return()=>clearInterval(ticker);
-    },[text])
+    })
     const tick=()=>{
         let i=loopNum%toRotate.length;
         let fullText=toRotate[i];

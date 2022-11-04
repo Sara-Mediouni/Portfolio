@@ -247,7 +247,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, rgba(73, 102, 167, 0.5) -5.91%, rgba(0, 57, 123, 0.771) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 150px;
+  margin-top: 20px;
   display: inline-block;
 }
 .banner h1 {
@@ -656,4 +657,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.btn-git{
+  margin-top: 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: linear-gradient(90.21deg, rgba(1, 40, 84, 0.771) -5.91%, rgba(0, 57, 123, 0.771) 111.58%);
+  color: #fff;
+  float:left;
+  margin-left: 150px;
+  width:120px;
+  height:30px;
+  text-align: center;
+  padding:5px
+}
+.btn-git:hover{
+  margin-top: 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #05336c;
+  color: #fff;
+  float:left;
+  margin-left: 150px;
+  width:120px;
+  height:30px;
+  text-align: center;
+  padding:5px
 }

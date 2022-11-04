@@ -2,11 +2,11 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
 import TrackVisibility from 'react-on-screen'
+import {motion} from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import {useAnimation} from 'framer-motion'
 export default function Skills() {
     const responsive = {
         superLargeDesktop: {
@@ -27,72 +27,120 @@ export default function Skills() {
             items: 1,
         },
     };
+    const{ref, inView}=useInView({
+        threshold:0.2
+      });
+      const animation=useAnimation();
+      useEffect(()=>{
+        
+    if (inView){
+      animation.start({
+        x:0,
+        transition:{
+          type:'spring',duration:1,bounce:0.3
+        }
+      });
+    }if (!inView){
+      animation.start({x:'-100vw'})
+    }
+      }
+      ,[animation, inView]);
     return (
-        <section className="skills" id="skills">
+        <section  ref={ref} className="skills" id="skills">
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-bx">
+                    <motion.div 
+animate={animation}  className="skill-bx">
                         <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__bounceIn":""}><h2>Skills</h2></div>}</TrackVisibility> 
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original-wordmark.svg" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="The logo icon for react" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Image" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
                                    
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Image" />
+                                    <img  alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"  />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"  />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"  />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"  />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"  />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg" alt="Image" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg"  />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
                                     
                                 </div>
                                 <div className="item">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt=""/>
                                     
                                 </div>
+                                <div className="item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""/>
+                                    
+                                </div>
+                                <div className="item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt=""/>
+                                    
+                                </div>
+                                <div className="item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg" alt=""/>
+                                    
+                                </div>
+                                <div className="item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt=""/>
+                                    
+                                </div>
+                                <div className="item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" alt=""/>
+                                    
+                                </div>
+                                <div className="item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt=""/>
+                                    
+                                </div>
+                                <div className="item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt=""/>
+                                    
+                                </div>
+                              
                             </Carousel>
-                        </div>
+                            </motion.div>
                     </Col>
                 </Row>
             </Container>

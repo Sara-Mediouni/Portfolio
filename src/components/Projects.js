@@ -1,30 +1,38 @@
 import React from 'react'
 import { Col, Container, Nav, Row, Tab } from 'react-bootstrap'
 import {ProjectCard} from './ProjectCard'
-import projImg1 from '../assets/img/project-img1.png'
-import projImg2 from '../assets/img/project-img2.png'
-import projImg3 from '../assets/img/project-img3.png'
+import projImg1 from '../assets/img/sportify.PNG'
+import projImg2 from '../assets/img/182489549-c80e5fc6-d6a8-48c7-8c60-76ffc5858447.png'
+import projImg3 from '../assets/img/Capture.PNG'
+import projImg4 from '../assets/img/c.PNG'
 import TrackVisibility from 'react-on-screen'
 export default function Projects() {
     const projects=[
         {
-            title:"t",
-            description:"t",
-            imgURL:projImg1
+            title:"Puppify",
+            description:"PetStore Swagger.io, ReactJS",
+            imgURL:projImg3
         },
         {
-            title:"t",
-            description:"t",
+            title:"Readify",
+            description:"Books Store NodeJS, ExpressJS, MongoDB, ReactJS, Google Books API",
             imgURL:projImg2
         },
         {
-            title:"t",
-            description:"t",
-            imgURL:projImg3
+            title:"Sportify",
+            description:"Tunisian sports clubs NodeJS, ExpressJS, MongoDB, ReactJS",
+            imgURL:projImg1
         }
     ]
+    const projects2=[
+      {
+          title:"Spotify 2.0",
+          description:"",
+          imgURL:projImg4
+      }
+  ]
   return (
- <section className="project" id="project">
+ <section className="project" id="projects">
     <Container>
         <Row>
             <Col>
@@ -56,7 +64,16 @@ export default function Projects() {
               </Row>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
-                <p>content</p>
+            <Row> 
+                 {projects2.map((project, index) =>{                
+               return(
+                <ProjectCard 
+                key={index} 
+                {...project}/>
+               )
+                })
+                 }
+              </Row>
             </Tab.Pane>
 
             <Tab.Pane eventKey="third">
