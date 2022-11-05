@@ -82,10 +82,7 @@ animate={animation}  className="skill-bx">
                                     <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
                                     
                                 </div>
-                                <div className="item">
-                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
-                                    
-                                </div>
+                              
                                 <div className="item">
                                     <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg"  />
                                     
