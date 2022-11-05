@@ -25,10 +25,16 @@ export default function About() {
           
           <p><span style={{color: info.baseColor}}>Sarra Mediouni <span
           className={Style.green}>(main)</span> $</span> cd certifications</p>
+          <p><span style={{color: info.baseColor}}>certifications <span
+                className={Style.green}>(main)</span> $</span> ls</p>
       <p style={{color: info.baseColor}}> Technologia Academy <span className={Style.white}>Full Stack Js Summer Camp</span></p>
       <p style={{color: info.baseColor}}> IEEE Student Chapter <span className={Style.white}>Problem Solving Division</span></p>
+      <p><span style={{color: info.baseColor}}>certifications <span
+                className={Style.green}>(main)</span> $</span> cd ..</p>
       <p><span style={{color: info.baseColor}}>Sarra Mediouni <span
           className={Style.green}>(main)</span> $</span> cd memberships</p>
+          <p><span style={{color: info.baseColor}}>memberships <span
+                className={Style.green}>(main)</span> $</span> ls</p>
       <p style={{color: info.baseColor}}> 4C ISSATSO  <span className={Style.white}>Ambassador</span></p>
       <p style={{color: info.baseColor}}> IEEE Student Chapter  <span className={Style.white}>Member</span></p>
         </>}
