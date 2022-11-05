@@ -46,7 +46,7 @@ export default function Skills() {
       }
       ,[animation, inView]);
     return (
-        <section  ref={ref} className="skills" id="skills">
+        <section  ref={ref} className="skills" id="skills" >
             <Container>
                 <Row>
                     <Col>

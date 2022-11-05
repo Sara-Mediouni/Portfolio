@@ -45,13 +45,13 @@ export default function Projects() {
           <Tab.Container id="projects-tabs" defaultActiveKey="first">
            <Nav variant="pills"  className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
              <Nav.Item>
-                <Nav.Link eventKey="first">tab 1</Nav.Link>
+                <Nav.Link eventKey="first">Web</Nav.Link>
              </Nav.Item>
              <Nav.Item>
-                <Nav.Link eventKey="second">tab 2</Nav.Link>
+                <Nav.Link eventKey="second">Web</Nav.Link>
              </Nav.Item>
              <Nav.Item>
-                <Nav.Link eventKey="third">tab 3</Nav.Link>
+                <Nav.Link eventKey="third">AI</Nav.Link>
              </Nav.Item>
            </Nav>
            <Tab.Content id="slideInUp">

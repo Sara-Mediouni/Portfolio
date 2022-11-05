@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import {Box} from "@mui/material";
+import { SiGmail } from "react-icons/si";
+import { BsGithub } from "react-icons/bs";
 import headerImg from '../assets/img/61e7040706211fef317619fe_UI_UX Design.svg'
 import { useState,useEffect } from "react";
 import 'animate.css';
@@ -52,14 +54,16 @@ export default function Banner() {
               <span className="wrap">{text}</span>
             </h1>
             <p>Turning ideas into real life <TrackVisibility>{({isVisible})=><div className={isVisible?"products animate__animated animate__flash":"products"}><span >products</span></div>}</TrackVisibility> is my calling.</p>
-            <a href="#contacts">
-              Let's connect <ArrowRightCircle size={25}/>
-            </a>
+           
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
           </Col>
         </Row>
+        <Box display={'flex'} gap={'1rem'} justifyContent={'left'} fontSize={{xs: '2rem', md: '1.2rem'}}>
+        <SiGmail color="#05336c"/> mediounisarra@gmail.com
+        <BsGithub color="#05336c"/> Sara-Mediouni
+            </Box>
       </Container>
     </section>
   );

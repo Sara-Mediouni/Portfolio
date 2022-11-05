@@ -151,6 +151,11 @@ span.navbar-text {
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
+.social-icon a i {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -323,7 +328,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
-.skill {
+.skills {
+  margin-top:100px;
   padding: 0 0 50px 0;
   position: relative;
 
@@ -334,10 +340,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   align-items: center;
   padding: 60px 50px;
-  margin-top: -60px;
-  margin-bottom: 100px;
+  margin-top:60px;
+  margin-bottom: 150px;
   height:300px;
- 
   
   }
   .contact-bx h2 {
@@ -390,6 +395,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: #05336c;
   margin-bottom: 150px;
+  border-radius: 60px;
+  margin:30px
 }
 .project h2 {
 	font-size: 45px;

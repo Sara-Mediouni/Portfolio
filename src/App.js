@@ -5,15 +5,21 @@ import Banner from './Components/Banner'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+import Education from './Components/about/Education';
+
+import About from './Components/about/About';
 function App() {
   return (
-    <div className="App">
-     <Navbarcomponent/>
-     <Banner/>
-     <Skills/>
-     <Projects/>
-     <Contact/>
+    <div>
+    <Navbarcomponent/>
+    <Banner/>
+    <About/>
+
+    <Education/>
+    <Skills/>
+    <Projects/>
+ 
+
     </div>
   );
 }
