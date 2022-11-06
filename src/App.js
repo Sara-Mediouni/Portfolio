@@ -8,13 +8,14 @@ import Projects from './Components/Projects';
 import Education from './Components/about/Education';
 
 import About from './Components/about/About';
+import Certif from './Components/certif';
 function App() {
   return (
     <div>
     <Navbarcomponent/>
     <Banner/>
     <About/>
-
+    <Certif/>
     <Education/>
     <Skills/>
     <Projects/>
