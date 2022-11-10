@@ -59,11 +59,14 @@ export default function Banner() {
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
           </Col>
-        </Row>
+        </Row><a className="btn-resume" href="https://drive.google.com/file/d/18XCCQzpWPVOKBB6LMf_YA5km2GvMZcMg/view?usp=sharing">
+              See my Resume
+            </a>
         <Box display={'flex'} gap={'1rem'} justifyContent={'left'} fontSize={{xs: '2rem', md: '1.2rem'}}>
         <SiGmail color="#05336c"/> mediounisarra@gmail.com
         <BsGithub color="#05336c"/> Sara-Mediouni
             </Box>
+            
       </Container>
     </section>
   );
