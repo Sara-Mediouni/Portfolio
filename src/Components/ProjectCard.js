@@ -9,7 +9,7 @@ export const ProjectCard=({title, description, imgURL,liengit}) => {
         <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
-            <a href={liengit} className='btn-git'>Lien Github</a>
+            <a href={liengit} className='btn-git'>Github</a>
         </div>
         </div>
 </Col>
