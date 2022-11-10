@@ -5,6 +5,7 @@ import projImg1 from '../assets/img/sportify.PNG'
 import projImg2 from '../assets/img/182489549-c80e5fc6-d6a8-48c7-8c60-76ffc5858447.png'
 import projImg3 from '../assets/img/Capture.PNG'
 import projImg4 from '../assets/img/c.PNG'
+import projImg5 from '../assets/img/portfolio.PNG'
 import TrackVisibility from 'react-on-screen'
 export default function Projects() {
     const projects=[
@@ -33,7 +34,13 @@ export default function Projects() {
           description:"",
           imgURL:projImg4,
           liengit:"https://github.com/Sara-Mediouni/Spotify2.0/tree/master/Spotify2.0"
-      }
+      },
+      {
+        title:"Portfolio",
+        description:"",
+        imgURL:projImg5,
+        liengit:"https://github.com/Sara-Mediouni/Portfolio"
+    }
   ]
   return (
  <section className="project" id="projects">
