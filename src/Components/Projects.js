@@ -6,6 +6,7 @@ import projImg2 from '../assets/img/182489549-c80e5fc6-d6a8-48c7-8c60-76ffc58584
 import projImg3 from '../assets/img/Capture.PNG'
 import projImg4 from '../assets/img/c.PNG'
 import projImg5 from '../assets/img/portfolio.PNG'
+import projImg6 from '../assets/img/sportifyadmin.PNG'
 import TrackVisibility from 'react-on-screen'
 export default function Projects() {
     const projects=[
@@ -40,7 +41,13 @@ export default function Projects() {
         description:"",
         imgURL:projImg5,
         liengit:"https://github.com/Sara-Mediouni/Portfolio"
-    }
+    },
+    {
+      title:"Dashboard Admin Sportif",
+      description:"",
+      imgURL:projImg6,
+      liengit:"https://github.com/Sara-Mediouni/SportifyAdminDashboard"
+  }
   ]
   return (
  <section className="project" id="projects">
