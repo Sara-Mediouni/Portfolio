@@ -54,10 +54,7 @@ export default function Skills() {
 animate={animation}  className="skill-bx">
                         <TrackVisibility>{({isVisible})=><div className={isVisible?" animate__animated animate__bounceIn":""}><h2>Skills</h2></div>}</TrackVisibility> 
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                                <div className="item">
-                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
-                                    
-                                </div>
+  
                                 <div className="item">
                                     <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                                     
@@ -83,10 +80,7 @@ animate={animation}  className="skill-bx">
                                     
                                 </div>
                               
-                                <div className="item">
-                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg"  />
-                                    
-                                </div>
+                               
                                 <div className="item">
                                     <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
                                     
@@ -101,6 +95,14 @@ animate={animation}  className="skill-bx">
                                 </div>
                                 <div className="item">
                                     <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                                    
+                                </div>
+                                <div className="item">
+                                    <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" />
+                                    
+                                </div>
+                                <div className="item">
+                                    <img alt="" src="" />
                                     
                                 </div>
                                 <div className="item">

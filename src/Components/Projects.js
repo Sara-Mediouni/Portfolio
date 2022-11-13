@@ -7,6 +7,8 @@ import projImg3 from '../assets/img/Capture.PNG'
 import projImg4 from '../assets/img/c.PNG'
 import projImg5 from '../assets/img/portfolio.PNG'
 import projImg6 from '../assets/img/sportifyadmin.PNG'
+import projImg7 from '../assets/img/chatbot.PNG'
+import projImg8 from '../assets/img/Blank 2 Grids Collage.png'
 import TrackVisibility from 'react-on-screen'
 export default function Projects() {
     const projects=[
@@ -27,10 +29,8 @@ export default function Projects() {
             description:"Tunisian sports clubs NodeJS, ExpressJS, MongoDB, ReactJS",
             imgURL:projImg1,
             liengit:"https://github.com/Sara-Mediouni/SportifyApplication"
-        }
-    ]
-    const projects2=[
-      {
+        },
+     {
           title:"Spotify 2.0",
           description:"",
           imgURL:projImg4,
@@ -47,8 +47,24 @@ export default function Projects() {
       description:"",
       imgURL:projImg6,
       liengit:"https://github.com/Sara-Mediouni/SportifyAdminDashboard"
-  }
+  }]
+    const projects2=[
+      {
+        title:"Bookstore",
+        description:"",
+        imgURL:projImg8,
+        liengit:"https://github.com/Sara-Mediouni/BooksStore"
+    }
   ]
+  const projects3=[
+    {
+        title:"ChatBot",
+        description:"",
+        imgURL:projImg7,
+        liengit:""
+    }
+ 
+]
   return (
  <section className="project" id="projects">
     <Container>
@@ -62,7 +78,7 @@ export default function Projects() {
                 <Nav.Link eventKey="first">Web</Nav.Link>
              </Nav.Item>
              <Nav.Item>
-                <Nav.Link eventKey="second">Web</Nav.Link>
+                <Nav.Link eventKey="second">Mobile</Nav.Link>
              </Nav.Item>
              <Nav.Item>
                 <Nav.Link eventKey="third">AI</Nav.Link>
@@ -95,7 +111,16 @@ export default function Projects() {
             </Tab.Pane>
 
             <Tab.Pane eventKey="third">
-                <p>content</p>
+            <Row> 
+                 {projects3.map((project, index) =>{                
+               return(
+                <ProjectCard 
+                key={index} 
+                {...project}/>
+               )
+                })
+                 }
+              </Row>
             </Tab.Pane>
            </Tab.Content>
            </Tab.Container>
