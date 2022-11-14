@@ -4,7 +4,6 @@ import '../App.css'
 import {Navbar,Container,Nav} from "react-bootstrap"
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import img1 from '../assets/img/logo.png'
-import { Eyeglasses } from 'react-bootstrap-icons'
 
 export default function Navbarcomponent(){
     const [activeLink,setActiveLink]=useState('home');
@@ -28,7 +27,7 @@ export default function Navbarcomponent(){
     <Navbar className={scrolled?"scrolled":""}>
         <Container>
           <Navbar.Brand href="#home">
-           <img src={img1} style={{height:"30px",width:"50px",marginTop:"5px"}}/>
+           <img src={img1} alt="" style={{height:"30px",width:"50px",marginTop:"5px"}}/>
           </Navbar.Brand>
          <Navbar.Toggle >
             <span className="navbar-toggler-icon"></span>
