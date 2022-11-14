@@ -59,9 +59,9 @@ export default function Projects() {
   const projects3=[
     {
         title:"ChatBot",
-        description:"",
+        description:"PyTorch, Flask, ReactJS",
         imgURL:projImg7,
-        liengit:""
+        liengit:"https://github.com/Sara-Mediouni/Chatbot-Pytorch"
     }
  
 ]
