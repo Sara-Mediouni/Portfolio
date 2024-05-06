@@ -78,7 +78,7 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Sarra. I'm a Software Engineering Student at ISSATSO. I enjoy long walks on the beach, and I believe Web Development will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Sarra. I'm a Full Stack Developer graduated from ISSATSO in October 2023. I enjoy long walks on the beach, and I believe Web Development will inevitably rule us all one day. You should hire me!",
     skills:
         {
             proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
